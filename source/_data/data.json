@@ -76,22 +76,45 @@
         "enviroments": {
             "items": [{
                 "content": "Volg systeem",
-                "class": "foo"
+                "modifierClass": "foo",
+                "class": "class"
             }, {
                 "content": "Ontwikkel",
-                "class": "foo"
+                "modifierClass": "foo"
             }, {
                 "content": "Test",
-                "class": "foo"
+                "modifierClass": "foo"
             }, {
                 "content": "Acceptatie",
-                "class": "foo"
+                "modifierClass": "foo"
             }, {
                 "content": "Productie",
-                "class": "foo"
+                "modifierClass": "foo"
             }]
         },
-
+        "applications-recent": [{
+            "name": "foo - name",
+            "status": "success",
+            "deployments": [{
+                    "status": "success",
+                    "version": "0.1.2",
+                    "date": "20-1-2017"
+                },
+                {
+                    "status": "success",
+                    "version": "0.1.1",
+                    "date": "19-1-2017"
+                }, {
+                    "status": "success",
+                    "version": "0.1.0",
+                    "date": "18-1-2017"
+                }, {
+                    "status": "success",
+                    "version": "0.1.0",
+                    "date": "18-1-2017"
+                }
+            ]
+        }],
         "applications": [{
                 "name": "foo - name",
                 "status": "fail",
@@ -133,6 +156,52 @@
                         "date": "18-1-2017"
                     }, {
                         "status": "success",
+                        "version": "0.7.0",
+                        "date": "18-1-2017"
+                    }
+                ]
+            },
+            {
+                "name": "bar - name",
+                "status": "success",
+                "deployments": [{
+                        "status": "success",
+                        "version": "0.3.2",
+                        "date": "20-1-2017"
+                    },
+                    {
+                        "status": "success",
+                        "version": "0.4.1",
+                        "date": "19-1-2017"
+                    }, {
+                        "status": "success",
+                        "version": "0.2.0",
+                        "date": "18-1-2017"
+                    }, {
+                        "status": "success",
+                        "version": "0.7.0",
+                        "date": "18-1-2017"
+                    }
+                ]
+            },
+            {
+                "name": "bar - name",
+                "status": "fail",
+                "deployments": [{
+                        "status": "success",
+                        "version": "0.3.2",
+                        "date": "20-1-2017"
+                    },
+                    {
+                        "status": "success",
+                        "version": "0.4.1",
+                        "date": "19-1-2017"
+                    }, {
+                        "status": "fail",
+                        "version": "0.2.0",
+                        "date": "18-1-2017"
+                    }, {
+                        "status": "fail",
                         "version": "0.7.0",
                         "date": "18-1-2017"
                     }

@@ -1,10 +1,10 @@
 {{# dashboard }}
 <table class="dashboard">
     {{# enviroments }}
-  <thead>
+  <thead class="dashboard__header">
     <tr>
     {{# items }}
-      <th class="{{# class }} {{ class }} {{/ class }}">
+      <th class="dashboard__header-cell {{ class }} {{# modifierClass }} dashboard__header-cell--{{ modifierClass }} {{/ modifierClass }}">
       {{ content }}
 
       </th>
@@ -12,20 +12,9 @@
       </tr>
       </thead>
     {{/ enviroments }}
-    <tbody>
-    {{# applications }}
 
-      <tr class="{{ status }}">
-        <th>{{ name }}</th>
-        {{# deployments }}
-          <td class=" {{ status }}">
-            <p>{{ version }}</p>
-            <time>{{ date }}</time>
-            </td>
-            {{/ deployments}}
-        </tr>
-
-      {{/ applications }}
+	<tbody>
+    {{> molecules-dashboard-row }}
       </tbody>
     </table>
     {{/ dashboard }}

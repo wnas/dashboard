@@ -1,3 +1,41 @@
-/*
- * YOUR STYLES HERE
- */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em; }
+
+.dashboard {
+  width: 100%;
+  border-collapse: collapse; }
+  .dashboard td,
+  .dashboard th {
+    padding: .5em; }
+
+.dashboard__row-header,
+.dashboard__header-cell {
+  text-align: left;
+  border-right: 1px solid #ccc; }
+
+.dashboard__header-cell {
+  border-bottom: 1px solid #ccc; }
+  .dashboard__header-cell::last-child {
+    border-right: 0;
+    color: red; }
+
+.dashboard__row--fail {
+  color: red; }
+
+.dashboard__row--success {
+  display: none; }
+
+:target .dashboard__row--success,
+:target > tbody .dashboard__row {
+  display: table-row; }
+
+:target + tbody + tbody .dashboard__row--success,
+:target .dashboard__row--fail {
+  display: none; }
+
+.dashboard__most-recent .dashboard__row {
+  display: table-row;
+  background-color: rgba(0, 0, 0, 0.4); }
+
+/*# sourceMappingURL=style.css.map */
