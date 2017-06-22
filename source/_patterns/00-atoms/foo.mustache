@@ -1,0 +1,31 @@
+{{# dashboard }}
+<table class="dashboard">
+    {{# enviroments }}
+  <thead>
+    <tr>
+    {{# items }}
+      <th class="{{# class }} {{ class }} {{/ class }}">
+      {{ content }}
+
+      </th>
+      {{/ items }}
+      </tr>
+      </thead>
+    {{/ enviroments }}
+    <tbody>
+    {{# applications }}
+
+      <tr class="{{ status }}">
+        <th>{{ name }}</th>
+        {{# deployments }}
+          <td class=" {{ status }}">
+            <p>{{ version }}</p>
+            <time>{{ date }}</time>
+            </td>
+            {{/ deployments}}
+        </tr>
+
+      {{/ applications }}
+      </tbody>
+    </table>
+    {{/ dashboard }}
