@@ -1,0 +1,9 @@
+
+	<tr class="dashboard__row {{# status }} dashboard__row--{{ status }} {{/ status }}">
+		<th class="dashboard__row-header"><span>{{ name }}</span></th>
+		{{# deployments }}
+			{{> atoms-dashboard-cell }}
+		{{/ deployments}}
+	</tr>
+
+<!-- /applications -->

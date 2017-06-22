@@ -1,0 +1,51 @@
+.dashboard {
+    width: 100%;
+    border-collapse: collapse;
+    td,
+    th {
+        padding: .5em;
+    }
+}
+
+.dashboard__row-header,
+.dashboard__header-cell {
+    text-align: left;
+    border-right: 1px solid #ccc;
+}
+
+.dashboard__header-cell {
+    border-bottom: 1px solid #ccc;
+    &::last-child {
+        border-right: 0;
+        color: red;
+    }
+}
+
+.dashboard__row-header {}
+
+.dashboard__row--fail {
+    color: red;
+}
+
+// initially hide the 'success' rows...
+.dashboard__row--success {
+    display: none;
+}
+
+// show the row when:
+// success is clicked, so
+//:target>tbody.dashboard__applications .dashboard__row,
+:target .dashboard__row--success,
+:target>tbody .dashboard__row {
+    display: table-row;
+}
+
+:target+tbody+tbody .dashboard__row--success,
+:target .dashboard__row--fail {
+    display: none;
+}
+
+.dashboard__most-recent .dashboard__row {
+    display: table-row;
+    background-color: rgba(0, 0, 0, .4);
+}

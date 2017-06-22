@@ -1,0 +1,33 @@
+{{# dashboard }}
+<ul>
+<li><a href="#success">success</a></li>
+<li><a href="#fail">fail</a></li>
+<li><a href="#all">all</a></li>
+</ul>
+	<table class="dashboard" id="all">
+		{{# enviroments }}
+	<thead class="dashboard__header" id="fail">
+		<tr>
+		{{# items }}
+		<th class="dashboard__header-cell {{ class }} {{# modifierClass }} dashboard__header-cell--{{ modifierClass }} {{/ modifierClass }}">
+		{{ content }}
+
+		</th>
+		{{/ items }}
+		</tr>
+		</thead>
+		{{/ enviroments }}
+		{{# applications-recent }}
+			<tbody class="dashboard__most-recent">
+				{{> molecules-dashboard-row }}
+			</tbody>
+		{{/ applications-recent }}
+
+		<tbody class="dashboard__applications" id="success">
+			{{# applications }}
+				{{> molecules-dashboard-row }}
+			{{/ applications }}
+		</tbody>
+
+	</table>
+{{/ dashboard }}
