@@ -208,6 +208,42 @@
                 ]
             }
         ]
+    },
+    "lovs": {
+        "groups": [{
+                "naam": "3A"
+            },
+            {
+                "naam": "4A"
+            },
+            {
+                "naam": "4B"
+            },
+            {
+                "naam": "5A"
+            },
+            {
+                "naam": "5B"
+            },
+            {
+                "naam": "6A"
+            },
+            {
+                "naam": "6B"
+            },
+            {
+                "naam": "7A"
+            },
+            {
+                "naam": "7B"
+            },
+            {
+                "naam": "8B Hannelore"
+            },
+            {
+                "naam": "Onbekend"
+            }
+        ]
     }
 
 }
