@@ -1,0 +1,26 @@
+.btn {
+    background-color: $primary-magenta;
+    color: #fff;
+    font-weight: bold;
+    border: 3px solid $primary-magenta;
+    border-radius: 4px;
+    padding: 1rem 2.4rem;
+}
+
+.btn__label {
+    text-transform: lowercase;
+}
+
+.btn__label::first-letter {
+    text-transform: capitalize;
+}
+
+.btn__arrow {
+    margin-left: 1rem;
+    font-size: 150%;
+}
+
+.btn:hover {
+    background-color: $primary-magenta-hover;
+    border-color: $primary-magenta-hover;
+}

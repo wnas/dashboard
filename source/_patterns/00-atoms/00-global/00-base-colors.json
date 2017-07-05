@@ -1,0 +1,9 @@
+{
+    "basecolors": [{
+        "label": "$base-background",
+        "colorvalue": "#f8f8f8"
+    }, {
+        "label": "$base-text",
+        "colorvalue": "#5a5a5a"
+    }]
+}

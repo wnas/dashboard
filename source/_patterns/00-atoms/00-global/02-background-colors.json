@@ -1,0 +1,18 @@
+{
+    "backgroundcolors": [{
+        "label": "$background-default",
+        "colorvalue": "#f7f5f2"
+    }, {
+        "label": "$background-lightgray",
+        "colorvalue": "#f2f7f7"
+    }, {
+        "label": "$background-elementgray",
+        "colorvalue": "#efefef"
+    }, {
+        "label": "$background-darkgray",
+        "colorvalue": "#d1d1d1"
+    }, {
+        "label": "$background-titlegray",
+        "colorvalue": "#333333"
+    }]
+}

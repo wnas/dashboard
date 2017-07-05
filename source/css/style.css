@@ -1,6 +1,37 @@
+/*
+	brand colors
+*/
+/*
+	secondary colors
+*/
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1em; }
+  font-size: 1em;
+  color: #5a5a5a;
+  background-color: #f8f8f8;
+  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  font-weight: 100; }
+
+.btn {
+  background-color: #e30075;
+  color: #fff;
+  font-weight: bold;
+  border: 3px solid #e30075;
+  border-radius: 4px;
+  padding: 1rem 2.4rem; }
+
+.btn__label {
+  text-transform: lowercase; }
+
+.btn__label::first-letter {
+  text-transform: capitalize; }
+
+.btn__arrow {
+  margin-left: 1rem;
+  font-size: 150%; }
+
+.btn:hover {
+  background-color: #ce006a;
+  border-color: #ce006a; }
 
 .dashboard {
   width: 100%;
@@ -30,7 +61,7 @@ body {
 :target > tbody .dashboard__row {
   display: table-row; }
 
-:target + tbody + tbody .dashboard__row--success,
+:target + tbody ~ tbody .dashboard__row--success,
 :target .dashboard__row--fail {
   display: none; }
 

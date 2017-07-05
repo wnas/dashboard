@@ -40,7 +40,7 @@
     display: table-row;
 }
 
-:target+tbody+tbody .dashboard__row--success,
+:target+tbody~tbody .dashboard__row--success,
 :target .dashboard__row--fail {
     display: none;
 }

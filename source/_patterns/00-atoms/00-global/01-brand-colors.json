@@ -1,0 +1,24 @@
+{
+    "brandcolors": [{
+        "label": "$primary-magenta",
+        "colorvalue": "#e30075"
+    }, {
+        "label": "$primary-cyaan",
+        "colorvalue": "#00acd5"
+    }, {
+        "label": "$primary-ballpoint",
+        "colorvalue": "#0074a7"
+    }, {
+        "label": "$primary-teal",
+        "colorvalue": "#00b1aa"
+    }, {
+        "label": "$secondary-geel",
+        "colorvalue": "#f6c900"
+    }, {
+        "label": "$secondary-groen",
+        "colorvalue": "#0fa550"
+    }, {
+        "label": "$secondary-rood",
+        "colorvalue": "#e73446"
+    }]
+}
