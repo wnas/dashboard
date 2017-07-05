@@ -1,0 +1,48 @@
+.btn {
+    background-color: $primary-magenta;
+    color: $background-lightgray;
+    font-weight: bold;
+    border: 3px solid $primary-magenta;
+    border-radius: 4px;
+    padding: 1rem 2.4rem;
+}
+
+.btn--secondary {
+    background-color: $primary-cyaan;
+    border-color: $primary-cyaan;
+}
+
+.btn--ghost {
+    background-color: transparent;
+    border-color: $background-lightgray;
+    color: $background-lightgray;
+}
+
+.btn__label {
+    text-transform: lowercase;
+}
+
+.btn__label::first-letter {
+    text-transform: capitalize;
+}
+
+.btn__arrow {
+    margin-left: 1rem;
+    font-size: 150%;
+}
+
+.btn:hover {
+    background-color: $primary-magenta-hover;
+    border-color: $primary-magenta-hover;
+}
+
+.btn--secondary:hover {
+    background-color: $primary-cyaan-hover;
+    border-color: $primary-cyaan-hover;
+}
+
+.btn--ghost:hover {
+    background-color: $background-lightgray;
+    border-color: $background-lightgray;
+    color: $primary-magenta;
+}

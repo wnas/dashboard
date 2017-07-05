@@ -4,6 +4,13 @@
 /*
 	secondary colors
 */
+/*
+	backgrounds
+*/
+@font-face : {
+  font-family: "pt-sans";
+  src: url("../../../fonts/pt-sans/PTC55F.tff"); }
+
 body {
   font-size: 1em;
   color: #5a5a5a;
@@ -11,13 +18,30 @@ body {
   font-family: 'PT Sans', Arial, Helvetica, sans-serif;
   font-weight: 100; }
 
+a {
+  color: #0074a7;
+  text-decoration: none; }
+
+a:hover,
+a:focus {
+  text-decoration: underline; }
+
 .btn {
   background-color: #e30075;
-  color: #fff;
+  color: #f2f7f7;
   font-weight: bold;
   border: 3px solid #e30075;
   border-radius: 4px;
   padding: 1rem 2.4rem; }
+
+.btn--secondary {
+  background-color: #00acd5;
+  border-color: #00acd5; }
+
+.btn--ghost {
+  background-color: transparent;
+  border-color: #f2f7f7;
+  color: #f2f7f7; }
 
 .btn__label {
   text-transform: lowercase; }
@@ -32,6 +56,15 @@ body {
 .btn:hover {
   background-color: #ce006a;
   border-color: #ce006a; }
+
+.btn--secondary:hover {
+  background-color: #00a1c7;
+  border-color: #00a1c7; }
+
+.btn--ghost:hover {
+  background-color: #f2f7f7;
+  border-color: #f2f7f7;
+  color: #e30075; }
 
 .dashboard {
   width: 100%;
